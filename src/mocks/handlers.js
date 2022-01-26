@@ -9,4 +9,12 @@ export const handlers = [
             ])
         );
     }),
+    rest.get('http://localhost:3030/toppings', (req, res, ctx) => {
+        return res(
+            ctx.json([
+                { name: 'sprinkle', imagePath: '/images/sprinkle.png' },
+                { name: 'cones', imagePath: '/images/cones.png' },
+            ])
+        );
+    }),
 ]
